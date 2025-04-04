@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WAY -   MY WAY  </title>
+    <meta name="description" content="اكتشف أفضل العطور ومستحضرات التجميل. عطور رجالية ونسائية، منتجات عناية بالبشرة والشعر، زيوت عطرية، ومكياج بأسعار مميزة.">
+    <meta name="keywords" content="عطور, مستحضرات التجميل, عناية بالبشرة, عناية بالشعر, عطور رجالية, عطور نسائية, زيوت عطرية, منتجات تجميل, مكياج, كريمات, منتجات طبيعية, تسوق عطور, تسوق مستحضرات التجميل">
+    <meta name="author" content="MY WAY">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://myway.com" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="MY WAY - MY WAY">
+    <meta property="og:description" content="أفضل المنتجات الطازجة بأسعار مميزة وتوصيل سريع في جميع أنحاء مصر">
+    <meta property="og:image" content="https://myway.com/images/logo.png">
+    <meta property="og:url" content="https://myway.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_EG">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MY WAY - MY WAY">
+    <meta name="twitter:description" content="أفضل المنتجات الطازجة بأسعار مميزة وتوصيل سريع في جميع أنحاء مصر">
+    <meta name="twitter:image" content="https://myway.com/images/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        .main-content {
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* أنماط المسطح المائي */
+        .water-surface {
+            position: relative;
+            height: 120px;
+            margin-bottom: 40px;
+            overflow: hidden;
+            background: linear-gradient(to bottom, 
+                rgba(23, 107, 179, 0.8) 0%,
+                rgba(33, 150, 243, 0.6) 50%,
+                rgba(33, 150, 243, 0.3) 100%);
+            border-radius: 0 0 50% 50%/0 0 100% 100%;
+            box-shadow: 0 10px 30px rgba(33, 150, 243, 0.3);
+        }
+
+        .water-wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200%;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            animation: wave 5s infinite linear;
+        }
+
+        /* أشكال الدلافين */
+        .dolphin {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><path d="M10 25 Q0 10 20 5 Q30 15 50 15 L80 15 Q95 25 80 35 L50 35 Q30 35 20 45 Q0 40 10 25 Z" fill="%2373A1BF"/><circle cx="30" cy="25" r="3" fill="%23fff"/></svg>');
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 1;
+            animation: dolphin-jump 8s infinite;
+        }
+
+        /* حركة القفز للدلافين */
+        @keyframes dolphin-jump {
+            0%, 100% {
+                transform: translateX(-150px) translateY(50px) rotateY(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            20% {
+                transform: translateX(50px) translateY(0px) rotateY(0deg);
+            }
+            30% {
+                transform: translateX(100px) translateY(-100px) rotateY(0deg) rotate(-15deg);
+            }
+            40% {
+                transform: translateX(150px) translateY(-150px) rotateY(0deg) rotate(-30deg);
+            }
+            50% {
+                transform: translateX(200px) translateY(-50px) rotateY(0deg) rotate(-15deg);
+            }
+            60% {
+                transform: translateX(250px) translateY(0px) rotateY(0deg);
+            }
+            70% {
+                transform: translateX(300px) translateY(50px) rotateY(180deg);
+            }
+            80% {
+                transform: translateX(350px) translateY(0px) rotateY(180deg);
+            }
+            90% {
+                transform: translateX(400px) translateY(-80px) rotateY(180deg) rotate(15deg);
+            }
+        }
+
+        /* حركة الموج */
+        @keyframes wave {
+            0% {
+                transform: translateX(-50%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        /* تعديل شريط البحث */
+        .search-box {
+            position: relative;
+            z-index: 2;
+            margin-top: -20px;
+            padding: 0 20px;
+        }
+
+        /* باقي الأنماط */
+        .search-box {
+            margin-bottom: 30px;
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .product-img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .whatsapp-btn {
+            background: linear-gradient(90deg, #25D366, #128C7E);
+            color: white !important;
+            padding: 8px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            transition: background 0.3s;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            color: white;
+        }
+
+        footer {
+            background: linear-gradient(90deg, #007bff, #6610f2);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .social-links a {
+            color: #2afa00;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+        }
+        
+        .map-container {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .contact-info {
+            background: white;
+            border-radius: 8px;
+            height: 100%;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .contact-info p {
+            margin-bottom: 15px;
+        }
+        
+        .contact-info i {
+            margin-left: 8px;
+            color: #2c3e50;
+        }
+        
+        .breadcrumb {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 0.75rem 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .breadcrumb-item.active {
+            font-weight: bold;
+            color: #007bff;
+        }
+        
+        h1, h2, h3 {
+            color: #007bff;
+            font-weight: 700;
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: #fff !important;
+        }
+
+        .navbar-brand img {
+            border-radius: 50%; /* Makes the logo edges rounded */
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffd700 !important;
+        }
+
+        .navbar {
+            background: linear-gradient(90deg, #007bff, #6610f2);
+        }
+
+        /* أنماط خلفية الأسماك المتحركة */
+        .fish-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .fish {
+            position: absolute;
+            width: 80px;
+            height: 40px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+            animation: swim linear infinite;
+            opacity: 0.7;
+        }
+
+        /* أشكال الأسماك المختلفة */
+        .fish-1 {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><path d="M90,25 Q100,35 90,40 Q80,35 60,35 L20,35 Q5,25 20,15 L60,15 Q80,15 90,10 Q100,15 90,25 Z" fill="%23FF5722"/><circle cx="75" cy="25" r="3" fill="%23fff"/></svg>');
+        }
+
+        .fish-2 {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><path d="M90,25 Q100,35 85,40 Q80,30 60,30 L30,30 Q15,25 30,20 L60,20 Q80,20 85,10 Q100,15 90,25 Z" fill="%2300BCD4"/><circle cx="70" cy="25" r="3" fill="%23fff"/></svg>');
+        }
+
+        .fish-3 {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><path d="M90,25 Q100,15 85,10 Q80,20 60,20 L20,20 Q5,25 20,30 L60,30 Q80,30 85,40 Q100,35 90,25 Z" fill="%23FFC107"/><circle cx="70" cy="25" r="3" fill="%23fff"/></svg>');
+        }
+
+        /* سمكة خاصة تشبه سمك القرش */
+        .shark {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><path d="M90,25 Q100,10 85,5 Q80,15 60,15 L20,15 Q10,25 20,35 L60,35 Q80,35 85,45 Q100,40 90,25 Z" fill="%23607080"/><circle cx="75" cy="25" r="3" fill="%23fff"/><path d="M85,20 L95,15 L95,25 L85,30 Z" fill="%23d9534f"/></svg>');
+        }
+
+        .bubble {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            animation: bubble-up linear infinite;
+        }
+
+        @keyframes swim {
+            0% {
+                transform: translateX(-100px) scaleX(1);
+            }
+            100% {
+                transform: translateX(calc(100vw + 100px)) scaleX(1);
+            }
+        }
+
+        @keyframes swim-reverse {
+            0% {
+                transform: translateX(calc(100vw + 100px)) scaleX(-1);
+            }
+            100% {
+                transform: translateX(-100px) scaleX(-1);
+            }
+        }
+
+        @keyframes bubble-up {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+
+            .card {
+                margin-bottom: 15px;
+            }
+
+            .product-img {
+                height: 150px;
+            }
+
+            .contact-info {
+                padding: 15px;
+            }
+
+            .breadcrumb {
+                padding: 0.5rem 0.75rem;
+            }
+
+            .breadcrumb-item.active {
+                font-size: 0.9rem;
+            }
+
+            h1, h2, h3 {
+                font-size: 1.5rem;
+            }
+
+            .whatsapp-btn {
+                padding: 6px 15px;
+                font-size: 0.9rem;
+            }
+
+            .map-container iframe {
+                height: 300px;
+            }
+
+            .dolphin {
+                width: 70px;
+                height: 35px;
+            }
+
+            .fish {
+                width: 60px;
+                height: 30px;
+            }
+
+            .bubble {
+                width: 10px;
+                height: 10px;
+            }
+
+            .product-img {
+                height: 200px; /* Adjusted for smaller screens */
+            }
+
+            .card {
+                margin-bottom: 10px; /* Reduced margin for smaller screens */
+            }
+
+            .navbar-brand {
+                font-size: 1.5rem; /* Adjusted font size for better readability */
+            }
+
+            .breadcrumb {
+                padding: 0.5rem 0.75rem;
+            }
+
+            .breadcrumb-item.active {
+                font-size: 0.9rem;
+            }
+
+            .whatsapp-btn {
+                padding: 6px 15px;
+                font-size: 0.9rem;
+            }
+
+            .map-container iframe {
+                height: 250px; /* Adjusted map height for smaller screens */
+            }
+
+            .cart-container {
+                width: 100%; /* Full width for mobile */
+                max-height: 3000px; /* Reduced height */
+            }
+
+            .cart-item img {
+                width: 40px; /* Smaller image size */
+                height: 40px;
+            }
+
+            .cart-footer button {
+                padding: 8px 15px; /* Adjusted button size */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .navbar-brand {
+                font-size: 1rem;
+            }
+
+            .card-body h3 {
+                font-size: 1rem;
+            }
+
+            .breadcrumb-item.active {
+                font-size: 0.8rem;
+            }
+
+            .whatsapp-btn {
+                font-size: 0.8rem;
+            }
+
+            .contact-info p {
+                font-size: 0.9rem;
+            }
+
+            .map-container iframe {
+                height: 250px;
+            }
+
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+
+            .breadcrumb-item.active {
+                font-size: 0.8rem;
+            }
+
+            .whatsapp-btn {
+                font-size: 0.8rem;
+            }
+
+            .contact-info p {
+                font-size: 0.9rem;
+            }
+
+            .map-container iframe {
+                height: 200px; /* Further reduced map height */
+            }
+
+            .col-sm-6 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        .cart-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            max-height: 400px;
+            overflow-y: auto;
+            display: none;
+        }
+
+        .cart-header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .cart-items {
+            padding: 10px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .cart-item img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .cart-footer {
+            padding: 10px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+
+        .cart-footer button {
+            background: #25D366;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .cart-footer button:hover {
+            background: #128C7E;
+        }
+
+        .cart-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1001;
+        }
+
+        .cart-toggle:hover {
+            background: #0056b3;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #ff0000;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .add-to-cart-animation {
+            position: fixed;
+            z-index: 2000;
+            pointer-events: none;
+            animation: fly-to-cart 1s ease-in-out forwards;
+        }
+
+        @keyframes fly-to-cart {
+            0% {
+                transform: scale(1) translate(0, 0);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0.5) translate(calc(100vw - 60px), -20px);
+                opacity: 0;
+            }
+        }
+    </style>
+    <style>
+        /* Zoom effect styles */
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            background-color: white;
+            cursor: pointer; /* Change cursor to indicate it's clickable */
+        }
+
+        .card.zoomed {
+            position: relative;
+            transform: scale(1.1); /* Slightly enlarge the card */
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3); /* Enhance shadow for zoomed state */
+            z-index: 10; /* Ensure the zoomed card is above others */
+        }
+    </style>
+</head>
+<body>
+    <!-- زر فتح/إغلاق سلة المشتريات -->
+    <button class="cart-toggle" onclick="toggleCart()">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cartCount">0</span>
+    </button>
+
+    <!-- سلة المشتريات -->
+    <div class="cart-container" id="cartContainer">
+        <div class="cart-header">سلة المشتريات</div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <button onclick="checkout()">إتمام الشراء</button>
+        </div>
+    </div>
+
+    <!-- خلفية الأسماك المتحركة -->
+    <div class="fish-container" id="fishContainer"></div>
+
+    <!-- المسطح المائي مع الدلافين -->
+    <div class="water-surface">
+        <div class="water-wave"></div>
+        <div class="dolphin" style="left:10%; animation-delay:0s;"></div>
+        <div class="dolphin" style="left:30%; animation-delay:2s;"></div>
+        <div class="dolphin" style="left:50%; animation-delay:4s;"></div>
+    </div>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="MY WAY" style="height: 50px; margin-right: 10px;">
+                MY WAY
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل التنقل">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#products">المنتجات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#special-offers">العروض الخاصة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">موقعنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- مسار التنقل -->
+    <nav aria-label="breadcrumb" class="container py-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">المنتجات</li>
+        </ol>
+    </nav>
+
+    <!-- المحتوى الرئيسي -->
+    <div class="main-content">
+        <!-- مساحة إعلانية أعلى الصفحة -->
+        <div class="ad-space mb-4 text-center">
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/ads/ad-top.jpg" alt="إعلان أعلى الصفحة" class="img-fluid rounded">
+            </a>
+        </div>
+        <!-- شريط البحث -->
+        <div class="search-box">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="ابحث عن منتج..." id="searchInput" aria-label="بحث عن منتجات">
+                <button class="btn btn-primary" type="button" aria-label="بحث">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- قسم المنتجات -->
+        <section id="products" class="py-5">
+            <div class="container">
+                <h1 class="text-center mb-4">MY WAY -  منتجات </h1>
+                <h2 class="text-center mb-4">المنتجات المتاحة</h2>
+                <div class="row" id="productsContainer">
+                    <!-- المنتجات ستضاف هنا عبر JavaScript -->
+                </div>
+                <!-- مساحة إعلانية بين المنتجات -->
+                <div class="ad-space my-4 text-center">
+                    <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                        <img src="images/ads/ad-middle.jpg" alt="إعلان بين المنتجات" class="img-fluid rounded">
+                    </a>
+                </div>
+                <div class="text-center mt-4" id="paginationContainer">
+                    <!-- أزرار التصفح ستضاف هنا -->
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم العروض الخاصة -->
+        <section id="special-offers" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">العروض الخاصة</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/offer1.jpg" class="card-img-top" alt="عرض خاص 1">
+                            <div class="card-body">
+                                <h5 class="card-title">عرض خاص 1</h5>
+                                <p class="card-text">خصم 20% على جميع  .</p>
+                                <a href="https://wa.me/201003316735?text=مرحباً، أريد الاستفادة من عرض خاص 1" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-whatsapp"></i> طلب عبر واتساب
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/offer2.jpg" class="card-img-top" alt="عرض خاص 2">
+                            <div class="card-body">
+                                <h5 class="card-title">عرض خاص 2</h5>
+                                <p class="card-text">اشترِ 3 كجم من الفواكه واحصل على 1 كجم مجاناً.</p>
+                                <a href="https://wa.me/201003316735?text=مرحباً، أريد الاستفادة من عرض خاص 2" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-whatsapp"></i> طلب عبر واتساب
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/offer3.jpg" class="card-img-top" alt="عرض خاص 3">
+                            <div class="card-body">
+                                <h5 class="card-title">عرض خاص 3</h5>
+                                <p class="card-text">خصم 15% على جميع أنواع اللحوم الطازجة.</p>
+                                <a href="https://wa.me/201003316735?text=مرحباً، أريد الاستفادة من عرض خاص 3" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-whatsapp"></i> طلب عبر واتساب
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.facebook.com/MyWayMarket" target="_blank" rel="noopener noreferrer" aria-label="فيسبوك"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/201003316735" target="_blank" rel="noopener noreferrer" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <!-- Removed "جميع الحقوق محفوظة" section -->
+        </div>
+    </footer>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "MY WAY",
+      "image": "https://myway.com/images/logo.png",
+      "@id": "https://myway.com",
+      "url": "https://myway.com",
+      "telephone": "+.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": " ",
+        "addressLocality": "بني سويف",
+        "addressRegion": "المنطقة",
+        "postalCode": "61112",
+        "addressCountry": "EG"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "29.0650348",
+        "longitude": "31.1028093"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "10:00",
+        "closes": "18:00"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // بيانات المنتجات
+        const products = [
+    {
+        name: "Romance",
+        price: "250 ج",
+        image: "imagesm/romance.jpg",
+        alt: "Romance Perfume",
+        category: "عطور"
+    },
+    {
+        name: "lete",
+        price: "300 ج",
+        image: "imagesm/lete.jpg",
+        alt: "lete Perfume",
+        category: "عطور"
+    },
+    {
+        name: "Magic Black",
+        price: "350 ج",
+        image: "imagesm/magic_black.jpg",
+        alt: "Magic Black Perfume",
+        category: "عطور"
+    },
+    {
+        name: "Green",
+        price: "200 ج",
+        image: "imagesm/green.jpg",
+        alt: "Green Detergent",
+        category: "منظفات"
+    },
+    {
+        name: "Diva",
+        price: "220 ج",
+        image: "imagesm/diva.jpg",
+        alt: "Diva Detergent",
+        category: "منظفات"
+    },
+    {
+        name: "Tender",
+        price: "210 ج",
+        image: "imagesm/tender.jpg",
+        alt: "Tender Detergent",
+        category: "منظفات"
+    },
+    {
+        name: "جميلة كريم ماء الورد",
+        price: "150 ج",
+        image: "imagesm/jameela.jpg",
+        alt: "جميلة كريم ماء الورد",
+        category: "عناية بالبشرة"
+    },
+    {
+        name: "Glow",
+        price: "400 ج",
+        image: "imagesm/glow.jpg",
+        alt: "Glow Perfume",
+        category: "عطور"
+    },
+    {
+        name: "Funny",
+        price: "280 ج",
+        image: "imagesm/funny.jpg",
+        alt: "Funny Perfume",
+        category: "عطور"
+    },
+    {
+        name: "البحر الأحمر",
+        price: "320 ج",
+        image: "imagesm/cool_extreme.jpg",
+        alt: "البحر الأحمر Perfume",
+        category: "عطور"
+    }
+];
+
+        // دالة إنشاء بطاقات المنتجات
+        function createProductCards(productsArray, page = 1) {
+            const container = document.getElementById('productsContainer');
+            container.innerHTML = '';
+
+            const itemsPerPage = 16; // Updated to display 16 products per page
+            const startIndex = (page - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const paginatedProducts = productsArray.slice(startIndex, endIndex);
+
+            if (paginatedProducts.length === 0) {
+                container.innerHTML = '<div class="col-12 text-center py-5"><h4>لا توجد منتجات مطابقة للبحث</h4></div>';
+                return;
+            }
+
+            paginatedProducts.forEach(product => {
+                const card = `
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4"> <!-- Adjusted column size -->
+                        <div class="card h-100">
+                            <div class="card-img-wrapper">
+                                <img src="${product.image}" class="card-img-top product-img" alt="${product.alt}" loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h5">${product.name}</h3>
+                                <p class="text-success"><strong>السعر:</strong> ${product.price}</p>
+                                <button class="btn btn-primary btn-sm add-to-cart-btn" 
+                                    onclick="event.stopPropagation(); addToCart('${product.name}', '${product.price}', '${product.image}', '${product.alt}', '${product.category}')">
+                                    <i class="fas fa-cart-plus"></i> إضافة إلى السلة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += card;
+            });
+
+            // Add zoom effect event listeners
+            const cards = container.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.addEventListener('click', () => {
+                    // Remove 'zoomed' class from any other card that might be zoomed
+                    cards.forEach(otherCard => {
+                        if (otherCard !== card && otherCard.classList.contains('zoomed')) {
+                            otherCard.classList.remove('zoomed');
+                        }
+                    });
+                    card.classList.toggle('zoomed');
+                });
+            });
+
+            // Remove zoom on scroll
+            window.addEventListener('scroll', () => {
+                cards.forEach(card => {
+                    card.classList.remove('zoomed');
+                });
+            });
+
+            createPagination(productsArray.length, itemsPerPage, page);
+        }
+
+        // دالة لإنشاء أزرار التصفح
+        function createPagination(totalItems, itemsPerPage, currentPage) {
+            const paginationContainer = document.getElementById('paginationContainer');
+            paginationContainer.innerHTML = '';
+
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+            for (let i = 1; i <= totalPages; i++) {
+                const button = document.createElement('button');
+                button.className = `btn btn-sm ${i === currentPage ? 'btn-primary' : 'btn-outline-primary'} mx-1`;
+                button.textContent = i;
+                button.addEventListener('click', () => createProductCards(products, i));
+                paginationContainer.appendChild(button);
+            }
+        }
+
+        // تحسين دالة البحث
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase().trim();
+            updateURL(searchTerm);
+
+            const filtered = products.filter(product => {
+                const nameMatch = product.name.toLowerCase().includes(searchTerm);
+                const categoryMatch = product.category.toLowerCase().includes(searchTerm);
+                return nameMatch || categoryMatch;
+            });
+
+            createProductCards(filtered);
+        });
+
+        // تحديث عنوان URL
+        function updateURL(searchTerm) {
+            const state = { search: searchTerm };
+            const title = searchTerm ? `نتائج البحث عن: ${searchTerm} - MY WAY` : "MY WAY - متجر الأسماك والجمبري الطازج";
+            const url = searchTerm ? `?search=${encodeURIComponent(searchTerm)}` : window.location.pathname;
+            
+            history.pushState(state, title, url);
+            document.title = title;
+        }
+
+        // دالة لإنشاء دلافين إضافية بشكل عشوائي
+        function createRandomDolphins() {
+            const waterSurface = document.querySelector('.water-surface');
+            const dolphinCount = Math.floor(Math.random() * 2) + 1; // 1-2 دلافين إضافية
+            
+            for(let i = 0; i < dolphinCount; i++) {
+                const dolphin = document.createElement('div');
+                const delay = Math.random() * 5;
+                const left = Math.random() * 70 + 10;
+                
+                dolphin.className = 'dolphin';
+                dolphin.style.left = `${left}%`;
+                dolphin.style.animationDelay = `${delay}s`;
+                
+                waterSurface.appendChild(dolphin);
+                
+                // إزالة الدلفين بعد انتهاء الحركة
+                setTimeout(() => {
+                    dolphin.remove();
+                }, 8000 + (delay * 1000));
+            }
+            
+            setTimeout(createRandomDolphins, 10000);
+        }
+
+        // دالة لإنشاء خلفية الأسماك المتحركة
+        function initFishBackground() {
+            const fishContainer = document.getElementById('fishContainer');
+            const fishTypes = ['fish-1', 'fish-2', 'fish-3', 'shark'];
+            
+            // إنشاء الأسماك
+            for (let i = 0; i < 8; i++) {
+                createFish();
+            }
+            
+            // إنشاء الفقاعات
+            setInterval(createBubble, 800);
+            
+            function createFish() {
+                const fish = document.createElement('div');
+                const fishType = fishTypes[Math.floor(Math.random() * fishTypes.length)];
+                const size = Math.random() * 0.7 + 0.5;
+                const duration = Math.random() * 40 + 30;
+                const delay = Math.random() * 30;
+                const top = Math.random() * 80 + 10;
+                
+                fish.className = `fish ${fishType}`;
+                fish.style.top = `${top}%`;
+                fish.style.left = `${Math.random() * 100}%`;
+                fish.style.transform = `scale(${size})`;
+                fish.style.animationName = Math.random() > 0.5 ? 'swim' : 'swim-reverse';
+                fish.style.animationDuration = `${duration}s`;
+                fish.style.animationDelay = `-${delay}s`;
+                
+                fishContainer.appendChild(fish);
+            }
+            
+            function createBubble() {
+                const bubble = document.createElement('div');
+                const left = Math.random() * 100;
+                const size = Math.random() * 10 + 5;
+                const duration = Math.random() * 15 + 10;
+                const delay = Math.random() * 5;
+                
+                bubble.className = 'bubble';
+                bubble.style.left = `${left}%`;
+                bubble.style.bottom = '0';
+                bubble.style.width = `${size}px`;
+                bubble.style.height = `${size}px`;
+                bubble.style.animationDuration = `${duration}s`;
+                bubble.style.animationDelay = `-${delay}s`;
+                
+                fishContainer.appendChild(bubble);
+                
+                // إزالة الفقاعة بعد انتهاء الحركة
+                setTimeout(() => {
+                    bubble.remove();
+                }, duration * 1000);
+            }
+        }
+
+        // تهيئة أولية
+        document.addEventListener('DOMContentLoaded', function() {
+            // عرض المنتجات
+            const urlParams = new URLSearchParams(window.location.search);
+            const searchParam = urlParams.get('search');
+            
+            if (searchParam) {
+                document.getElementById('searchInput').value = searchParam;
+                const filtered = products.filter(product => 
+                    product.name.toLowerCase().includes(searchParam.toLowerCase()) ||
+                    product.category.toLowerCase().includes(searchParam.toLowerCase())
+                );
+                createProductCards(filtered);
+            } else {
+                createProductCards(products);
+            }
+            
+            // تحديث سنة حقوق النشر
+            document.getElementById('year').textContent = new Date().getFullYear();
+            
+            // بدء خلفية الأسماك المتحركة
+            initFishBackground();
+            
+            // بدء حركة الدلافين بعد تأخير
+            setTimeout(createRandomDolphins, 5000);
+        });
+
+        const cart = [];
+
+        function addToCart(name, price, image, alt, category) {
+            const product = {
+                name: name,
+                price: price,
+                image: image,
+                alt: alt,
+                category: category
+            };
+            
+            const existingProduct = cart.find(item => item.name === name);
+            if (existingProduct) {
+                existingProduct.quantity += 1;
+            } else {
+                cart.push({ 
+                    ...product, 
+                    quantity: 1 
+                });
+            }
+            updateCartUI();
+            showAddToCartAnimation(image);
+        }
+
+        function updateCartUI() {
+            const cartContainer = document.getElementById('cartItems');
+            const cartCount = document.getElementById('cartCount');
+            
+            if (cart.length === 0) {
+                cartContainer.innerHTML = '<div class="text-center p-4">سلة المشتريات فارغة</div>';
+            } else {
+                const cartItems = cart.map(item => createCartItemHTML(item)).join('');
+                const total = cart.reduce((sum, item) => {
+                    const price = parseFloat(item.price.replace(' ج', ''));
+                    return sum + (price * item.quantity);
+                }, 0);
+                
+                cartContainer.innerHTML = `
+                    ${cartItems}
+                    <div class="cart-total">
+                        <span>الإجمالي:</span>
+                        <span>${total.toFixed(2)} ج</span>
+                    </div>
+                `;
+            }
+            
+            cartCount.textContent = cart.reduce((total, item) => total + item.quantity, 0);
+        }
+
+        function createCartItemHTML(item) {
+            return `
+                <div class="cart-item">
+                    <img src="${item.image}" alt="${item.alt}">
+                    <div class="cart-item-details">
+                        <div class="cart-item-title">${item.name}</div>
+                        <div class="cart-item-price">${item.price}</div>
+                        <div class="cart-quantity-controls">
+                            <button class="quantity-btn" onclick="updateQuantity('${item.name}', -1)">-</button>
+                            <span>${item.quantity}</span>
+                            <button class="quantity-btn" onclick="updateQuantity('${item.name}', 1)">+</button>
+                        </div>
+                        <textarea class="form-control" placeholder="أضف ملاحظاتك..." rows="2" 
+                            oninput="updateNotes('${item.name}', this.value)">${item.note || ''}</textarea>
+                        <button class="btn btn-sm btn-danger mt-2" onclick="removeFromCart('${item.name}')">
+                            <i class="fas fa-trash-alt"></i> إزالة
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function updateQuantity(productName, change) {
+            const product = cart.find(item => item.name === productName);
+            if (product) {
+                product.quantity = Math.max(1, product.quantity + change);
+                updateCartUI();
+            }
+        }
+
+        function removeFromCart(productName) {
+            const productIndex = cart.findIndex(item => item.name === productName);
+            if (productIndex !== -1) {
+                cart.splice(productIndex, 1); // إزالة المنتج من السلة
+            }
+            updateCartUI(); // تحديث واجهة المستخدم بعد الإزالة
+        }
+
+        function updateNotes(productName, note) {
+            const product = cart.find(item => item.name === productName);
+            if (product) {
+                product.note = note;
+            }
+        }
+
+        function showAddToCartAnimation(imageSrc) {
+            const animationElement = document.createElement('img');
+            animationElement.src = imageSrc;
+            animationElement.className = 'add-to-cart-animation';
+
+            // Use event parameter explicitly
+            document.addEventListener('click', (event) => {
+                animationElement.style.top = `${event.clientY}px`;
+                animationElement.style.left = `${event.clientX}px`;
+            });
+
+            document.body.appendChild(animationElement);
+
+            animationElement.addEventListener('animationend', () => {
+                animationElement.remove();
+            });
+        }
+
+        function toggleCart() {
+            const cartContainer = document.getElementById('cartContainer');
+            cartContainer.style.display = cartContainer.style.display === 'none' || cartContainer.style.display === '' ? 'block' : 'none';
+        }
+
+        function checkout() {
+            if (cart.length === 0) {
+                alert('سلة المشتريات فارغة!');
+                return;
+            }
+
+            let message = 'مرحباً، أريد إتمام الطلب التالي:\n';
+            cart.forEach(item => {
+                message += `- ${item.name} (الكمية: ${item.quantity})\n`;
+                if (item.note) {
+                    message += `  ملاحظة: ${item.note}\n`;
+                }
+            });
+
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappURL = `https://wa.me/201003316735?text=${encodedMessage}`;
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+</body>
+</html>
