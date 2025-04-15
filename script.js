@@ -2,59 +2,24 @@
 const products = [
     {
         name: "Romance",
-        price: "250 ج",
+        price: "130 ج",
         image: "imagesm/Romance.jpg",
         alt: "Romance Perfume",
         category: "عطور"
     },
     {
-        name: "Lete",
-        price: "300 ج",
-        image: "imagesm/lete.jpg",
-        alt: "Lete Perfume",
-        category: "عطور"
-    },
-    {
-        name: "Magic Black",
-        price: "350 ج",
-        image: "imagesm/magic_black.jpg",
-        alt: "Magic Black Perfume",
-        category: "عطور"
-    },
-    {
         name: "Green",
-        price: "200 ج",
+        price: "170 ج",
         image: "imagesm/green.jpg",
         alt: "Green Detergent",
         category: "منظفات"
     },
     {
-        name: "Tender",
-        price: "210 ج",
-        image: "imagesm/tender.jpg",
-        alt: "Tender Detergent",
-        category: "منظفات"
-    },
-    {
         name: "تندر",
-        price: "210 ج",
+        price: "125 ج",
         image: "imagesm/تندر.jpeg",
         alt: "تندر",
         category: "منظفات"
-    },
-    {
-        name: "جميلة كريم ماء الورد",
-        price: "150 ج",
-        image: "imagesm/jameela.jpg",
-        alt: "جميلة كريم ماء الورد",
-        category: "عناية بالبشرة"
-    },
-    {
-        name: "Glow",
-        price: "400 ج",
-        image: "imagesm/glow.jpg",
-        alt: "Glow Perfume",
-        category: "عطور"
     },
     {
         name: "Funny",
@@ -64,8 +29,8 @@ const products = [
         category: "عطور"
     },
     {
-        name: "البحر الأحمر",
-        price: "320 ج",
+        name: "cool_extreme",
+        price: "130 ج",
         image: "imagesm/cool_extreme.jpg",
         alt: "البحر الأحمر Perfume",
         category: "عطور"
@@ -78,155 +43,120 @@ const products = [
         category: "عطور رجالية"
     },
     {
-        name: "أودو برفان إكسبلوجن",
-        price: "285 ج",
-        image: "imagesm/أودو_برفان_إكسبلوجن.jpg",
-        alt: "عطر رجالي",
-        category: "عطور رجالية"
-    },
-    {
         name: "عبير الزهرة البرية",
         price: "260 ج",
         image: "imagesm/عبير_الزهرة_البرية.jpg",
         alt: "عطر نسائي",
         category: "عطور نسائية"
     },
-    {
-        name: "برفان",
-        price: "270 ج",
-        image: "imagesm/برفان.jpg",
-        alt: "عطر",
+       {
+        name: "ليتيا",
+        price: "140 ج",
+        image: "imagesm/glow.jpg",
+        alt: "Glow Perfume",
         category: "عطور"
     },
     {
-        name: "برفان مميز",
-        price: "290 ج",
+        name: "سحر الخيال ",
+        price: "175 ج",
         image: "imagesm/برفان (4).jpg",
         alt: "عطر مميز",
         category: "عطور"
     },
     {
-        name: "برفين",
-        price: "275 ج",
+        name: "DIVA",
+        price: "199 ج",
         image: "imagesm/برفين.jpg",
         alt: "عطر فاخر",
         category: "عطور"
     },
     {
-        name: "أودو برفان كافتيريا",
-        price: "265 ج",
-        image: "imagesm/أودو_برفان_كافتيريا.jpg",
-        alt: "عطر مميز",
-        category: "عطور"
-    },
-    {
         name: "اودو برفان بوم رجالي",
-        price: "320 ج",
+        price: "290 ج",
         image: "imagesm/اودو_برفان_بوم_رجالي.jpg",
         alt: "عطر رجالي",
         category: "عطور رجالية"
     },
     {
-        name: "اوذوبرفان",
-        price: "290 ج",
+        name: "PIRFKT",
+        price: "170 ج",
         image: "imagesm/اوذوبرفان.jpeg",
         alt: "عطر",
         category: "عطور"
     },
     {
-        name: "Z Perfume",
-        price: "330 ج",
+        name: "SUIT ",
+        price: "160 ج",
         image: "imagesm/z_perfume.jpg",
         alt: "Z Perfume",
         category: "عطور"
     },
     {
-        name: "شور العود",
-        price: "350 ج",
-        image: "imagesm/شور_العود.jpg",
-        alt: "عطر العود",
-        category: "عطور فاخرة"
-    },
-    {
-        name: "Magic Care Oil",
-        price: "180 ج",
-        image: "imagesm/magic_care_oil.jpg",
-        alt: "زيت العناية السحري",
-        category: "زيوت طبيعية"
-    },
-    {
-        name: "فيجي تار",
-        price: "90 ج",
+        name: "فيجي تار وسط بارد",
+        price: "45 ج",
         image: "imagesm/فيجي_تار.jpg",
         alt: "فيجي تار",
         category: "أطعمة"
     },
     {
         name: "مافن",
-        price: "60 ج",
+        price: "75 ج",
         image: "imagesm/مافن.jpg",
         alt: "مافن",
         category: "حلويات"
     },
     {
-        name: "فيجي تار حار",
-        price: "90 ج",
+        name: "فيجي تار حار كبير",
+        price: "85 ج",
         image: "imagesm/فيجي_تار_حار.jpg",
         alt: "فيجي تار حار",
         category: "أطعمة"
     },
     {
         name: "بسبوسه جوز هند",
-        price: "45 ج",
+        price: "50 ج",
         image: "imagesm/بسبوسه_جوز هند.jpg",
         alt: "بسبوسه بجوز الهند",
         category: "حلويات"
     },
     {
         name: "اللهلوبة",
-        price: "80 ج",
+        price: "50 ج",
         image: "imagesm/اللهلوبة.jpg",
         alt: "اللهلوبة",
         category: "أطعمة"
     },
     {
-        name: "Lete Premium",
-        price: "330 ج",
-        image: "imagesm/letep.jpg",
-        alt: "Lete Premium",
-        category: "عطور"
-    },
-    {
         name: "كاسترد موز",
-        price: "50 ج",
+        price: "17 ج",
         image: "imagesm/كاسترد_موز.jpeg",
         alt: "كاسترد بنكهة الموز",
         category: "حلويات"
     },
     {
         name: "كاسترد شكولاته",
-        price: "55 ج",
+        price: "30 ج",
         image: "imagesm/كاسترد_شكولاته.jpeg",
         alt: "كاسترد بنكهة الشكولاته",
         category: "حلويات"
     },
     {
         name: "كاسترد عادي",
-        price: "45 ج",
+        price: "15 ج",
         image: "imagesm/كاسترد.jpeg",
         alt: "كاسترد",
         category: "حلويات"
     },
     {
         name: "أم علي",
-        price: "65 ج",
+        price: "40 ج",
         image: "imagesm/ام_علي.jpeg",
         alt: "أم علي",
         category: "حلويات شرقية"
     },
     {
         name: "بسبوسا",
-        price: "40 ج",
+        price: "50 ج",
         image: "imagesm/بسبوسا.jpeg",
         alt: "بسبوسا",
         category: "حلويات شرقية"
