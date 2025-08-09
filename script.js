@@ -897,7 +897,7 @@ function handleHeaderOnScroll() {
 // 23. جلب المنتجات من Google Sheets
 // ================================
 async function fetchProductsFromSheet() {
-    const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQW97GGGDtnnWSUBrlpg6Keds0Mg8XTlCa4eGc7ZrodALIluRjJXMA_DjZr5gZ5J822wZ4pbrFf12iF/pub?output=csv';
+    const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRHH2VI4PxAQ5VlYqaQBFqQbQ1gucbY9DpGo6cDJiY4_hOimOaM7zRtdrlR1mNSVMF7eNXh-8Mi4MPJ/pubhtml';
     const res = await fetch(url);
     const csv = await res.text();
     const lines = csv.split('\n').filter(line => line.trim().length > 0);
