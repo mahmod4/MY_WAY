@@ -1,0 +1,112 @@
+# ================================
+# ملف .gitignore لأسواق الشادر
+# ================================
+
+# ملفات النظام
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ملفات المحررات
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ملفات مؤقتة
+*.tmp
+*.temp
+*.log
+*.cache
+
+# ملفات النسخ الاحتياطية
+*.bak
+*.backup
+*.old
+
+# ملفات البيئة والمتغيرات
+.env
+.env.local
+.env.production
+.env.development
+
+# ملفات التكوين الحساسة (إذا كانت موجودة)
+secrets.json
+private-config.js
+firebase-keys.json
+config.js
+
+# ملفات قاعدة البيانات المحلية
+*.db
+*.sqlite
+*.sqlite3
+
+# ملفات التحميل المؤقتة
+uploads/
+temp/
+cache/
+
+# ملفات Node.js (إذا تم إضافة Node.js لاحقاً)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ملفات البناء
+dist/
+build/
+*.min.js
+*.min.css
+
+# ملفات الاختبار
+coverage/
+.nyc_output/
+
+# ملفات Docker (إذا تم إضافة Docker لاحقاً)
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# ملفات Git
+.git/
+
+# ملفات IDE إضافية
+*.sublime-project
+*.sublime-workspace
+
+# ملفات Windows
+*.lnk
+
+# ملفات macOS
+.AppleDouble
+.LSOverride
+
+# ملفات Linux
+*~
+
+# ملفات الأرشفة
+*.zip
+*.tar.gz
+*.rar
+
+# ملفات الوسائط الكبيرة (اختياري - إذا أردت استبعادها)
+# *.mp4
+# *.avi
+# *.mov
+# *.wmv
+
+# ملفات PDF (إذا كانت موجودة)
+*.pdf
+
+# ملفات Office (إذا كانت موجودة)
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+# ملفات التطوير المحلية
+local-config.js
+dev-config.js 
